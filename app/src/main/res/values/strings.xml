@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EasySignatureViewExample</string>
+    <string name="key_signature_byte_intent">KEY_SIGNATURE_BYTE</string>
+    <string name="signature_warning">Signature is ready</string>
+</resources>
