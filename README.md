@@ -5,6 +5,7 @@ A simple and easy signature view.
 </br>
 
 * It provides a Activity where an signature can be drawn.
+* Signature is returned in either bitmap or array of bytes.
 * Has callbacks for okay and cancel button.
 * Has a Cross button to clear view.
 * Also, Sub text can be added.
