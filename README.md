@@ -56,6 +56,6 @@ Then, go to the module level build.gradle file and add,
 
 ```groovy
 dependencies {
-  compile 'com.github.smalam119:Easy-Signature-Android:0.1.0'
+  compile 'com.github.smalam119:Easy-Signature-Android:0.2.0'
 }
 ```
