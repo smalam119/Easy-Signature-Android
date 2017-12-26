@@ -4,11 +4,11 @@
 A simple and easy signature view.
 </br>
 
-* Provides a view where an signature can be drawn.
+* It provides a Activity where an signature can be drawn.
 * Has callbacks for okay and cancel button.
-* Cross button to clear view.
-* Sub text can be added.
-* Just have to create a class and extend 'SignatureViewActivity'
+* Has a Cross button to clear view.
+* Also, Sub text can be added.
+* Just create a class and extend 'SignatureViewActivity'
 
 ```java
 public class DemoSignatureViewController extends SignatureViewActivity {
@@ -41,7 +41,7 @@ public class DemoSignatureViewController extends SignatureViewActivity {
 Download
 --------
 
-First, add jitpack. Add it in your root build.gradle:
+First, add jitpack. Add this in your root build.gradle:
 
 ```groovy
 allprojects {
