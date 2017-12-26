@@ -1,1 +1,1 @@
-include ':app', ':easysignatureview'
+include ':EasySignatureView-Example', ':easysignatureview'

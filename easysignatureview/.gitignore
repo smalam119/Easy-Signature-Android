@@ -1,1 +1,52 @@
-/build
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+target/
+*.iml
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio generated folders
+.navigation/
+captures/
+.externalNativeBuild
+
+# IntelliJ project files
+*.iml
+.idea/
+
+# Misc
+.DS_Store
+
+# Keystore files
+*.jks
+
+# Release/publishing credentials
+bintray.properties
+release.properties
+
+# Proguard README
+proguard-project.txt
+sample_client/proguard-project.txt
+tests/proguard-project.txt
+tests/test_cases/proguard-project.txt
+
+# Local configuration files (sdk path, etc)
+sample_client/local.properties
+tests/local.properties
+tests/test_cases/local.properties

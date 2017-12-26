@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EasySignatureView.iml" filepath="$PROJECT_DIR$/EasySignatureView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EasySignatureView-Example/EasySignatureView-Example.iml" filepath="$PROJECT_DIR$/EasySignatureView-Example/EasySignatureView-Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EasySignatureView-Example/app.iml" filepath="$PROJECT_DIR$/EasySignatureView-Example/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/easysignatureview/easysignatureview.iml" filepath="$PROJECT_DIR$/easysignatureview/easysignatureview.iml" />
     </modules>
   </component>

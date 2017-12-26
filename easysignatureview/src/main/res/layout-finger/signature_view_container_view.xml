@@ -8,7 +8,9 @@
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp">
 
         <Button
             android:id="@+id/cancel_button"
@@ -16,7 +18,7 @@
             android:layout_height="50dp"
             android:background="@drawable/cancel"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignParentLeft="true" />
 
         <Button
             android:id="@+id/done_button"
@@ -24,7 +26,7 @@
             android:layout_height="50dp"
             android:background="@drawable/done"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/cancel_button"/>
+            android:layout_toRightOf="@id/cancel_button" />
 
     </LinearLayout>
 

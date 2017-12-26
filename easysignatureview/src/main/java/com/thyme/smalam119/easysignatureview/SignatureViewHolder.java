@@ -12,7 +12,7 @@ import android.widget.TextView;
  * Created by smalam119 on 12/25/17.
  */
 
-public class SignatureViewHolder extends RelativeLayout {
+class SignatureViewHolder extends RelativeLayout {
     private View mRootView, mCancelButton, mDoneButton;
     private View mCrossButton;
     private TextView subTitleTextView;
@@ -36,8 +36,9 @@ public class SignatureViewHolder extends RelativeLayout {
         subTitleTextView.setText(text);
     }
 
-    private void clearSignatureView() {
+    public void clearSignatureView() {
         mSignatureView.clearCanvas();
+        mSignatureView.setDrawingCacheEnabled(false);
     }
 
     private Bitmap getSignatureBitmap() {
@@ -60,6 +61,7 @@ public class SignatureViewHolder extends RelativeLayout {
             @Override
             public void onClick(View view) {
                 onSignatureViewHolderInteraction.onDoneButtonClicked(getSignatureBitmap());
+                mSignatureView.setDrawingCacheEnabled(false);
             }
         });
         mCrossButton = (View) mRootView.findViewById(R.id.cross_button);

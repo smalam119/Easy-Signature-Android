@@ -6,6 +6,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
 public class SecondActivity extends AppCompatActivity {
@@ -26,5 +27,6 @@ public class SecondActivity extends AppCompatActivity {
         Drawable drawable = new BitmapDrawable(getResources(), bitmap);
         imageView = (ImageView) findViewById(R.id.image_view);
         imageView.setImageDrawable(drawable);
+        Log.d("bytes",bytes.length + "");
     }
 }

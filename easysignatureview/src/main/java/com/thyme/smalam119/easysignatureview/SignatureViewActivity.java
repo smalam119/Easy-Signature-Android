@@ -3,7 +3,6 @@ package com.thyme.smalam119.easysignatureview;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import java.io.ByteArrayOutputStream;
 
 public abstract class SignatureViewActivity extends AppCompatActivity implements OnSignatureViewHolderInteraction {
