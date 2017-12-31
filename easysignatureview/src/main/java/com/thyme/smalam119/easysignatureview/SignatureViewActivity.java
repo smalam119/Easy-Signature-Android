@@ -3,13 +3,11 @@ package com.thyme.smalam119.easysignatureview;
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import java.io.ByteArrayOutputStream;
 import java.util.Date;
 
 public abstract class SignatureViewActivity extends AppCompatActivity implements OnSignatureViewHolderInteraction {
     private SignatureViewHolder mSignatureViewHolder;
-    private Date date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +15,6 @@ public abstract class SignatureViewActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_signature_view);
         mSignatureViewHolder = (SignatureViewHolder) findViewById(R.id.signature_view_holder_main);
         mSignatureViewHolder.onSignatureViewHolderInteraction = this;
-
-        //get date from the signature view
-        date = mSignatureViewHolder.getDate();
-        Log.d("date",date.toString());
     }
 
     private byte[] bitmapToDrawable(Bitmap bitmap) {
@@ -32,6 +26,10 @@ public abstract class SignatureViewActivity extends AppCompatActivity implements
 
     public void setSubText(String subText) {
         mSignatureViewHolder.setSubTitleText(subText);
+    }
+
+    public Date getDate() {
+        return mSignatureViewHolder.getDate();
     }
 
     public abstract void onClickDone(Bitmap bitmap);
