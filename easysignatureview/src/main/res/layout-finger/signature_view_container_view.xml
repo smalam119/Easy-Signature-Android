@@ -77,6 +77,16 @@
                 android:gravity="center"
                 android:layout_marginTop="8dp"/>
 
+            <TextView
+                android:id="@+id/date_time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="31 December, 2017"
+                android:layout_below="@+id/term_condition_text_text_view"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
         </RelativeLayout>
 
     </LinearLayout>

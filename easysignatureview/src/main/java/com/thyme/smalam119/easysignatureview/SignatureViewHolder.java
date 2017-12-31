@@ -7,6 +7,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by smalam119 on 12/25/17.
@@ -15,7 +18,7 @@ import android.widget.TextView;
 class SignatureViewHolder extends RelativeLayout {
     private View mRootView, mCancelButton, mDoneButton;
     private View mCrossButton;
-    private TextView subTitleTextView;
+    private TextView mSubTitleTextView, mDateTimeTextView;
     private SignatureView mSignatureView;
     private Context mContext;
     public OnSignatureViewHolderInteraction onSignatureViewHolderInteraction;
@@ -33,7 +36,21 @@ class SignatureViewHolder extends RelativeLayout {
     }
 
     public void setSubTitleText(String text) {
-        subTitleTextView.setText(text);
+        mSubTitleTextView.setText(text);
+    }
+
+    public String getSubtitleText(){
+        return mDateTimeTextView.getText().toString();
+    }
+
+    private String getDateTimeString() {
+        Date currentTime = Calendar.getInstance().getTime();
+        String stringDate = DateFormat.getDateInstance().format(currentTime);
+        return stringDate;
+    }
+
+    public Date getDate(){
+        return Calendar.getInstance().getTime();
     }
 
     public void clearSignatureView() {
@@ -71,7 +88,9 @@ class SignatureViewHolder extends RelativeLayout {
                 clearSignatureView();
             }
         });
-        subTitleTextView = (TextView) mRootView.findViewById(R.id.term_condition_text_text_view);
+        mSubTitleTextView = (TextView) mRootView.findViewById(R.id.term_condition_text_text_view);
+        mDateTimeTextView = (TextView) mRootView.findViewById(R.id.date_time_text_view);
         mSignatureView = (SignatureView) mRootView.findViewById(R.id.signature_view);
+        mDateTimeTextView.setText(getDateTimeString());
     }
 }
