@@ -1,6 +1,6 @@
 # Easy-Signature-Android
 
-<img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-26-02-44-08.png" align="center" width="300"/>
+<img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-31-23-29-09.png" align="center" width="300"/>
 A simple and easy signature view.
 </br>
 
@@ -8,11 +8,15 @@ A simple and easy signature view.
 * Signature is returned in either bitmap or array of bytes.
 * Has callbacks for okay and cancel button.
 * Has a Cross button to clear view.
+* Can get signature date.
 * Also, Sub text can be added.
 * Just create a class and extend 'SignatureViewActivity'
 
 ```java
 public class DemoSignatureViewController extends SignatureViewActivity {
+    private Date mDate;
+    private Bitmap mSignatureBitmap;
+    private byte[] mSignatureInBytes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +28,14 @@ public class DemoSignatureViewController extends SignatureViewActivity {
     //call back for done button click. returns bitmap
     @Override
     public void onClickDone(Bitmap bitmap) {
+        mDate = this.getDate(); //get the date of the signature
+        mSignatureBitmap = bitmap; // signature in bitmap
     }
 
     //call back for done button click. returns array of byte
     @Override
     public void onClickDone(byte[] bytes) {
+        mSignatureInBytes = bytes; //signature in bytes
     }
 
     //callback for cancel button click
@@ -56,7 +63,7 @@ Then, go to the module level build.gradle file and add,
 
 ```groovy
 dependencies {
-  compile 'com.github.smalam119:Easy-Signature-Android:0.2.0'
+  compile 'com.github.smalam119:Easy-Signature-Android:0.3.0'
 }
 ```
 
