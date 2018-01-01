@@ -1,16 +1,44 @@
 # Easy-Signature-Android
 
-<img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-31-23-29-09.png" align="center" width="300"/>
-A simple and easy signature view.
-</br>
 
-* It provides a Activity where an signature can be drawn.
+<img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-31-23-29-09.png" align="center" width="300"/>
+
+## **A simple and easy signature view.**
+
+Features
+=======
+
+* A signature view provided as a activty.
 * Signature is returned in either bitmap or array of bytes.
-* Has callbacks for okay and cancel button.
-* Has a Cross button to clear view.
-* Can get signature date.
-* Also, Sub text can be added.
-* Just create a class and extend 'SignatureViewActivity'
+* Callbacks for okay and cancel button.
+* Cross button to clear view.
+* Editable sub-text
+* Signature date.
+
+Download
+=======
+
+First, add this in your root build.gradle:
+
+```groovy
+allprojects {
+  repositories {
+    ...
+      maven { url 'https://jitpack.io' }
+   }
+}
+```
+Then, go to the module level build.gradle file and add,
+
+```groovy
+dependencies {
+  compile 'com.github.smalam119:Easy-Signature-Android:0.3.0'
+}
+```
+Example
+=======
+
+The example is quite straightforward and documented in comments. Just create a class and extend 'SignatureViewActivity' then implement accordingly. Remember to register the class as activity in manifast file.
 
 ```java
 public class DemoSignatureViewController extends SignatureViewActivity {
@@ -45,30 +73,12 @@ public class DemoSignatureViewController extends SignatureViewActivity {
 
 }
 ```
-
-Download
---------
-
-First, add jitpack. Add this in your root build.gradle:
-
-```groovy
-allprojects {
-  repositories {
-    ...
-      maven { url 'https://jitpack.io' }
-   }
-}
-```
-Then, go to the module level build.gradle file and add,
-
-```groovy
-dependencies {
-  compile 'com.github.smalam119:Easy-Signature-Android:0.3.0'
-}
-```
+Author
+=======
+* **Sayed Mahmudul Alam**
 
 License
--------
+=======
 
     Copyright 2017 Sayed Mahmudul Alam
 
