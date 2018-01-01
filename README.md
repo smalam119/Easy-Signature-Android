@@ -1,9 +1,11 @@
+</br>
+</br>
+</br>
+<img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-31-23-29-09.png" align="right" width="300"/>
+
 # Easy-Signature-Android
 
-
-<img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-31-23-29-09.png" align="center" width="300"/>
-
-## **A simple and easy signature view.**
+Easy signature is a ui library that provides android developer with a plugable signature view. This view can be added as a activity in the project.
 
 Features
 =======
