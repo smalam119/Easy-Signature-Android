@@ -1,6 +1,6 @@
 # Easy-Signature-Android
 
-Easy signature is a ui library that provides android developer with a plugable signature view. This view can be added as a activity in the project.
+Easy signature is an ui library that provides android developer with a plugable signature view. This view can be added as an activity in the project.
 
 <img src="https://github.com/smalam119/Easy-Signature-Android/blob/master/Screenshot_2017-12-31-23-29-09.png" align="center" width="300"/>
 
@@ -38,7 +38,7 @@ dependencies {
 Example
 =======
 
-The example is quite straightforward and documented in comments. Just create a class and extend 'SignatureViewActivity' then implement accordingly. Remember to register the class as activity in manifast file.
+The example is quite straightforward and documented in comments. Just create a class and extend 'SignatureViewActivity' then implement accordingly. Remember to register the class as an activity in manifast file.
 
 ```java
 public class DemoSignatureViewController extends SignatureViewActivity {
